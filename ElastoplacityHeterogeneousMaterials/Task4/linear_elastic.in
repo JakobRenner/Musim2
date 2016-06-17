@@ -1,0 +1,275 @@
+linear_elastic.out
+Linear elastic FEM
+NonLinearStatic nsteps 10 controllmode 1 deltaT 0.1 rtolv 1e-6  MaxIter 1000   nmodules 3
+vtkxml tstep_all domain_all primvars 1 1 vars 4 1 2 4 5   stype 1
+hom tstep_all
+GPExportModule tstep_all domain_all ncoords 3 vars 3 1 4 27
+domain PlaneStrain
+OutputManager tstep_all dofman_all element_all
+ndofman 100 nelem 81 ncrosssect 1 nmat 81 nbc 2 nic 0 nltf 1
+node 1 coords 3 0.0 0.0 0 bc 2 1 1
+node 2 coords 3 0.3333333333333333 0.0 0 bc 2 0 1
+node 3 coords 3 0.6666666666666666 0.0 0 bc 2 0 1
+node 4 coords 3 1.0 0.0 0 bc 2 0 1
+node 5 coords 3 1.3333333333333333 0.0 0 bc 2 0 1
+node 6 coords 3 1.6666666666666665 0.0 0 bc 2 0 1
+node 7 coords 3 2.0 0.0 0 bc 2 0 1
+node 8 coords 3 2.333333333333333 0.0 0 bc 2 0 1
+node 9 coords 3 2.6666666666666665 0.0 0 bc 2 0 1
+node 10 coords 3 3.0 0.0 0 bc 2 0 1
+node 11 coords 3 0.0 0.4444444444444444 0 
+node 12 coords 3 0.3333333333333333 0.4444444444444444 0 
+node 13 coords 3 0.6666666666666666 0.4444444444444444 0 
+node 14 coords 3 1.0 0.4444444444444444 0 
+node 15 coords 3 1.3333333333333333 0.4444444444444444 0 
+node 16 coords 3 1.6666666666666665 0.4444444444444444 0 
+node 17 coords 3 2.0 0.4444444444444444 0 
+node 18 coords 3 2.333333333333333 0.4444444444444444 0 
+node 19 coords 3 2.6666666666666665 0.4444444444444444 0 
+node 20 coords 3 3.0 0.4444444444444444 0 
+node 21 coords 3 0.0 0.8888888888888888 0 
+node 22 coords 3 0.3333333333333333 0.8888888888888888 0 
+node 23 coords 3 0.6666666666666666 0.8888888888888888 0 
+node 24 coords 3 1.0 0.8888888888888888 0 
+node 25 coords 3 1.3333333333333333 0.8888888888888888 0 
+node 26 coords 3 1.6666666666666665 0.8888888888888888 0 
+node 27 coords 3 2.0 0.8888888888888888 0 
+node 28 coords 3 2.333333333333333 0.8888888888888888 0 
+node 29 coords 3 2.6666666666666665 0.8888888888888888 0 
+node 30 coords 3 3.0 0.8888888888888888 0 
+node 31 coords 3 0.0 1.3333333333333333 0 
+node 32 coords 3 0.3333333333333333 1.3333333333333333 0 
+node 33 coords 3 0.6666666666666666 1.3333333333333333 0 
+node 34 coords 3 1.0 1.3333333333333333 0 
+node 35 coords 3 1.3333333333333333 1.3333333333333333 0 
+node 36 coords 3 1.6666666666666665 1.3333333333333333 0 
+node 37 coords 3 2.0 1.3333333333333333 0 
+node 38 coords 3 2.333333333333333 1.3333333333333333 0 
+node 39 coords 3 2.6666666666666665 1.3333333333333333 0 
+node 40 coords 3 3.0 1.3333333333333333 0 
+node 41 coords 3 0.0 1.7777777777777777 0 
+node 42 coords 3 0.3333333333333333 1.7777777777777777 0 
+node 43 coords 3 0.6666666666666666 1.7777777777777777 0 
+node 44 coords 3 1.0 1.7777777777777777 0 
+node 45 coords 3 1.3333333333333333 1.7777777777777777 0 
+node 46 coords 3 1.6666666666666665 1.7777777777777777 0 
+node 47 coords 3 2.0 1.7777777777777777 0 
+node 48 coords 3 2.333333333333333 1.7777777777777777 0 
+node 49 coords 3 2.6666666666666665 1.7777777777777777 0 
+node 50 coords 3 3.0 1.7777777777777777 0 
+node 51 coords 3 0.0 2.2222222222222223 0 
+node 52 coords 3 0.3333333333333333 2.2222222222222223 0 
+node 53 coords 3 0.6666666666666666 2.2222222222222223 0 
+node 54 coords 3 1.0 2.2222222222222223 0 
+node 55 coords 3 1.3333333333333333 2.2222222222222223 0 
+node 56 coords 3 1.6666666666666665 2.2222222222222223 0 
+node 57 coords 3 2.0 2.2222222222222223 0 
+node 58 coords 3 2.333333333333333 2.2222222222222223 0 
+node 59 coords 3 2.6666666666666665 2.2222222222222223 0 
+node 60 coords 3 3.0 2.2222222222222223 0 
+node 61 coords 3 0.0 2.6666666666666665 0 
+node 62 coords 3 0.3333333333333333 2.6666666666666665 0 
+node 63 coords 3 0.6666666666666666 2.6666666666666665 0 
+node 64 coords 3 1.0 2.6666666666666665 0 
+node 65 coords 3 1.3333333333333333 2.6666666666666665 0 
+node 66 coords 3 1.6666666666666665 2.6666666666666665 0 
+node 67 coords 3 2.0 2.6666666666666665 0 
+node 68 coords 3 2.333333333333333 2.6666666666666665 0 
+node 69 coords 3 2.6666666666666665 2.6666666666666665 0 
+node 70 coords 3 3.0 2.6666666666666665 0 
+node 71 coords 3 0.0 3.1111111111111107 0 
+node 72 coords 3 0.3333333333333333 3.1111111111111107 0 
+node 73 coords 3 0.6666666666666666 3.1111111111111107 0 
+node 74 coords 3 1.0 3.1111111111111107 0 
+node 75 coords 3 1.3333333333333333 3.1111111111111107 0 
+node 76 coords 3 1.6666666666666665 3.1111111111111107 0 
+node 77 coords 3 2.0 3.1111111111111107 0 
+node 78 coords 3 2.333333333333333 3.1111111111111107 0 
+node 79 coords 3 2.6666666666666665 3.1111111111111107 0 
+node 80 coords 3 3.0 3.1111111111111107 0 
+node 81 coords 3 0.0 3.5555555555555554 0 
+node 82 coords 3 0.3333333333333333 3.5555555555555554 0 
+node 83 coords 3 0.6666666666666666 3.5555555555555554 0 
+node 84 coords 3 1.0 3.5555555555555554 0 
+node 85 coords 3 1.3333333333333333 3.5555555555555554 0 
+node 86 coords 3 1.6666666666666665 3.5555555555555554 0 
+node 87 coords 3 2.0 3.5555555555555554 0 
+node 88 coords 3 2.333333333333333 3.5555555555555554 0 
+node 89 coords 3 2.6666666666666665 3.5555555555555554 0 
+node 90 coords 3 3.0 3.5555555555555554 0 bc 2 0 2
+node 91 coords 3 0.0 4.0 0 bc 2 0 2
+node 92 coords 3 0.3333333333333333 4.0 0 bc 2 0 2
+node 93 coords 3 0.6666666666666666 4.0 0 bc 2 0 2
+node 94 coords 3 1.0 4.0 0 bc 2 0 2
+node 95 coords 3 1.3333333333333333 4.0 0 bc 2 0 2
+node 96 coords 3 1.6666666666666665 4.0 0 bc 2 0 2
+node 97 coords 3 2.0 4.0 0 bc 2 0 2
+node 98 coords 3 2.333333333333333 4.0 0 bc 2 0 2
+node 99 coords 3 2.6666666666666665 4.0 0 bc 2 0 2
+node 100 coords 3 3.0 4.0 0 bc 2 0 2
+quad1planestrain 1 nodes 4 1 2 12 11 crossSect 1 mat 1
+quad1planestrain 2 nodes 4 2 3 13 12 crossSect 1 mat 2
+quad1planestrain 3 nodes 4 3 4 14 13 crossSect 1 mat 3
+quad1planestrain 4 nodes 4 4 5 15 14 crossSect 1 mat 4
+quad1planestrain 5 nodes 4 5 6 16 15 crossSect 1 mat 5
+quad1planestrain 6 nodes 4 6 7 17 16 crossSect 1 mat 6
+quad1planestrain 7 nodes 4 7 8 18 17 crossSect 1 mat 7
+quad1planestrain 8 nodes 4 8 9 19 18 crossSect 1 mat 8
+quad1planestrain 9 nodes 4 9 10 20 19 crossSect 1 mat 9
+quad1planestrain 10 nodes 4 11 12 22 21 crossSect 1 mat 10
+quad1planestrain 11 nodes 4 12 13 23 22 crossSect 1 mat 11
+quad1planestrain 12 nodes 4 13 14 24 23 crossSect 1 mat 12
+quad1planestrain 13 nodes 4 14 15 25 24 crossSect 1 mat 13
+quad1planestrain 14 nodes 4 15 16 26 25 crossSect 1 mat 14
+quad1planestrain 15 nodes 4 16 17 27 26 crossSect 1 mat 15
+quad1planestrain 16 nodes 4 17 18 28 27 crossSect 1 mat 16
+quad1planestrain 17 nodes 4 18 19 29 28 crossSect 1 mat 17
+quad1planestrain 18 nodes 4 19 20 30 29 crossSect 1 mat 18
+quad1planestrain 19 nodes 4 21 22 32 31 crossSect 1 mat 19
+quad1planestrain 20 nodes 4 22 23 33 32 crossSect 1 mat 20
+quad1planestrain 21 nodes 4 23 24 34 33 crossSect 1 mat 21
+quad1planestrain 22 nodes 4 24 25 35 34 crossSect 1 mat 22
+quad1planestrain 23 nodes 4 25 26 36 35 crossSect 1 mat 23
+quad1planestrain 24 nodes 4 26 27 37 36 crossSect 1 mat 24
+quad1planestrain 25 nodes 4 27 28 38 37 crossSect 1 mat 25
+quad1planestrain 26 nodes 4 28 29 39 38 crossSect 1 mat 26
+quad1planestrain 27 nodes 4 29 30 40 39 crossSect 1 mat 27
+quad1planestrain 28 nodes 4 31 32 42 41 crossSect 1 mat 28
+quad1planestrain 29 nodes 4 32 33 43 42 crossSect 1 mat 29
+quad1planestrain 30 nodes 4 33 34 44 43 crossSect 1 mat 30
+quad1planestrain 31 nodes 4 34 35 45 44 crossSect 1 mat 31
+quad1planestrain 32 nodes 4 35 36 46 45 crossSect 1 mat 32
+quad1planestrain 33 nodes 4 36 37 47 46 crossSect 1 mat 33
+quad1planestrain 34 nodes 4 37 38 48 47 crossSect 1 mat 34
+quad1planestrain 35 nodes 4 38 39 49 48 crossSect 1 mat 35
+quad1planestrain 36 nodes 4 39 40 50 49 crossSect 1 mat 36
+quad1planestrain 37 nodes 4 41 42 52 51 crossSect 1 mat 37
+quad1planestrain 38 nodes 4 42 43 53 52 crossSect 1 mat 38
+quad1planestrain 39 nodes 4 43 44 54 53 crossSect 1 mat 39
+quad1planestrain 40 nodes 4 44 45 55 54 crossSect 1 mat 40
+quad1planestrain 41 nodes 4 45 46 56 55 crossSect 1 mat 41
+quad1planestrain 42 nodes 4 46 47 57 56 crossSect 1 mat 42
+quad1planestrain 43 nodes 4 47 48 58 57 crossSect 1 mat 43
+quad1planestrain 44 nodes 4 48 49 59 58 crossSect 1 mat 44
+quad1planestrain 45 nodes 4 49 50 60 59 crossSect 1 mat 45
+quad1planestrain 46 nodes 4 51 52 62 61 crossSect 1 mat 46
+quad1planestrain 47 nodes 4 52 53 63 62 crossSect 1 mat 47
+quad1planestrain 48 nodes 4 53 54 64 63 crossSect 1 mat 48
+quad1planestrain 49 nodes 4 54 55 65 64 crossSect 1 mat 49
+quad1planestrain 50 nodes 4 55 56 66 65 crossSect 1 mat 50
+quad1planestrain 51 nodes 4 56 57 67 66 crossSect 1 mat 51
+quad1planestrain 52 nodes 4 57 58 68 67 crossSect 1 mat 52
+quad1planestrain 53 nodes 4 58 59 69 68 crossSect 1 mat 53
+quad1planestrain 54 nodes 4 59 60 70 69 crossSect 1 mat 54
+quad1planestrain 55 nodes 4 61 62 72 71 crossSect 1 mat 55
+quad1planestrain 56 nodes 4 62 63 73 72 crossSect 1 mat 56
+quad1planestrain 57 nodes 4 63 64 74 73 crossSect 1 mat 57
+quad1planestrain 58 nodes 4 64 65 75 74 crossSect 1 mat 58
+quad1planestrain 59 nodes 4 65 66 76 75 crossSect 1 mat 59
+quad1planestrain 60 nodes 4 66 67 77 76 crossSect 1 mat 60
+quad1planestrain 61 nodes 4 67 68 78 77 crossSect 1 mat 61
+quad1planestrain 62 nodes 4 68 69 79 78 crossSect 1 mat 62
+quad1planestrain 63 nodes 4 69 70 80 79 crossSect 1 mat 63
+quad1planestrain 64 nodes 4 71 72 82 81 crossSect 1 mat 64
+quad1planestrain 65 nodes 4 72 73 83 82 crossSect 1 mat 65
+quad1planestrain 66 nodes 4 73 74 84 83 crossSect 1 mat 66
+quad1planestrain 67 nodes 4 74 75 85 84 crossSect 1 mat 67
+quad1planestrain 68 nodes 4 75 76 86 85 crossSect 1 mat 68
+quad1planestrain 69 nodes 4 76 77 87 86 crossSect 1 mat 69
+quad1planestrain 70 nodes 4 77 78 88 87 crossSect 1 mat 70
+quad1planestrain 71 nodes 4 78 79 89 88 crossSect 1 mat 71
+quad1planestrain 72 nodes 4 79 80 90 89 crossSect 1 mat 72
+quad1planestrain 73 nodes 4 81 82 92 91 crossSect 1 mat 73
+quad1planestrain 74 nodes 4 82 83 93 92 crossSect 1 mat 74
+quad1planestrain 75 nodes 4 83 84 94 93 crossSect 1 mat 75
+quad1planestrain 76 nodes 4 84 85 95 94 crossSect 1 mat 76
+quad1planestrain 77 nodes 4 85 86 96 95 crossSect 1 mat 77
+quad1planestrain 78 nodes 4 86 87 97 96 crossSect 1 mat 78
+quad1planestrain 79 nodes 4 87 88 98 97 crossSect 1 mat 79
+quad1planestrain 80 nodes 4 88 89 99 98 crossSect 1 mat 80
+quad1planestrain 81 nodes 4 89 90 100 99 crossSect 1 mat 81
+SimpleCS 1 thick 1
+IsoLE 1 d 0. E 1.4821213828711735 n 0.3 tAlpha 0
+IsoLE 2 d 0. E 1.2432375643506681 n 0.3 tAlpha 0
+IsoLE 3 d 0. E 1.4962836832751893 n 0.3 tAlpha 0
+IsoLE 4 d 0. E 0.5061829090442173 n 0.3 tAlpha 0
+IsoLE 5 d 0. E 0.5882741692035066 n 0.3 tAlpha 0
+IsoLE 6 d 0. E 0.7616396844612202 n 0.3 tAlpha 0
+IsoLE 7 d 0. E 1.3689359422299314 n 0.3 tAlpha 0
+IsoLE 8 d 0. E 1.3949921353224015 n 0.3 tAlpha 0
+IsoLE 9 d 0. E 0.85323390893943 n 0.3 tAlpha 0
+IsoLE 10 d 0. E 0.6115637827030362 n 0.3 tAlpha 0
+IsoLE 11 d 0. E 1.344747706425093 n 0.3 tAlpha 0
+IsoLE 12 d 0. E 0.8713042032325021 n 0.3 tAlpha 0
+IsoLE 13 d 0. E 1.426468066249336 n 0.3 tAlpha 0
+IsoLE 14 d 0. E 1.497050547444784 n 0.3 tAlpha 0
+IsoLE 15 d 0. E 1.2143193566029122 n 0.3 tAlpha 0
+IsoLE 16 d 0. E 1.0409174252587723 n 0.3 tAlpha 0
+IsoLE 17 d 0. E 0.9022307130679886 n 0.3 tAlpha 0
+IsoLE 18 d 0. E 1.2535210895559885 n 0.3 tAlpha 0
+IsoLE 19 d 0. E 0.9540450049179308 n 0.3 tAlpha 0
+IsoLE 20 d 0. E 1.2285385828806898 n 0.3 tAlpha 0
+IsoLE 21 d 0. E 0.5271910144061898 n 0.3 tAlpha 0
+IsoLE 22 d 0. E 1.0032373734655167 n 0.3 tAlpha 0
+IsoLE 23 d 0. E 1.3801094783498293 n 0.3 tAlpha 0
+IsoLE 24 d 0. E 1.3847462431604365 n 0.3 tAlpha 0
+IsoLE 25 d 0. E 0.6811745085502776 n 0.3 tAlpha 0
+IsoLE 26 d 0. E 0.8505450530375498 n 0.3 tAlpha 0
+IsoLE 27 d 0. E 1.2305076949343896 n 0.3 tAlpha 0
+IsoLE 28 d 0. E 1.0778803805858481 n 0.3 tAlpha 0
+IsoLE 29 d 0. E 1.302950985046814 n 0.3 tAlpha 0
+IsoLE 30 d 0. E 0.7292565323174652 n 0.3 tAlpha 0
+IsoLE 31 d 0. E 0.6497504859529509 n 0.3 tAlpha 0
+IsoLE 32 d 0. E 0.9118535190585086 n 0.3 tAlpha 0
+IsoLE 33 d 0. E 0.7857101814604579 n 0.3 tAlpha 0
+IsoLE 34 d 0. E 0.9363227619660854 n 0.3 tAlpha 0
+IsoLE 35 d 0. E 1.1895271256575342 n 0.3 tAlpha 0
+IsoLE 36 d 0. E 1.3891604792761538 n 0.3 tAlpha 0
+IsoLE 37 d 0. E 1.0424758005038728 n 0.3 tAlpha 0
+IsoLE 38 d 0. E 0.8256681405278531 n 0.3 tAlpha 0
+IsoLE 39 d 0. E 0.9258169057780955 n 0.3 tAlpha 0
+IsoLE 40 d 0. E 0.7426097686121156 n 0.3 tAlpha 0
+IsoLE 41 d 0. E 0.5637278897891337 n 0.3 tAlpha 0
+IsoLE 42 d 0. E 1.433858146369245 n 0.3 tAlpha 0
+IsoLE 43 d 0. E 0.6758340627813095 n 0.3 tAlpha 0
+IsoLE 44 d 0. E 1.0062497765057163 n 0.3 tAlpha 0
+IsoLE 45 d 0. E 0.5359492878343044 n 0.3 tAlpha 0
+IsoLE 46 d 0. E 0.5173503963158089 n 0.3 tAlpha 0
+IsoLE 47 d 0. E 0.8078405185536859 n 0.3 tAlpha 0
+IsoLE 48 d 0. E 1.4624632736599805 n 0.3 tAlpha 0
+IsoLE 49 d 0. E 1.347464615055596 n 0.3 tAlpha 0
+IsoLE 50 d 0. E 0.6210828699259121 n 0.3 tAlpha 0
+IsoLE 51 d 0. E 0.786512047318124 n 0.3 tAlpha 0
+IsoLE 52 d 0. E 0.6738878494671912 n 0.3 tAlpha 0
+IsoLE 53 d 0. E 1.098691786694167 n 0.3 tAlpha 0
+IsoLE 54 d 0. E 0.5342030832927953 n 0.3 tAlpha 0
+IsoLE 55 d 0. E 1.0810726024256634 n 0.3 tAlpha 0
+IsoLE 56 d 0. E 1.3711863365442323 n 0.3 tAlpha 0
+IsoLE 57 d 0. E 1.081496446382538 n 0.3 tAlpha 0
+IsoLE 58 d 0. E 0.9111524412222426 n 0.3 tAlpha 0
+IsoLE 59 d 0. E 0.5294389352453353 n 0.3 tAlpha 0
+IsoLE 60 d 0. E 1.220033000852268 n 0.3 tAlpha 0
+IsoLE 61 d 0. E 0.7805952852298207 n 0.3 tAlpha 0
+IsoLE 62 d 0. E 1.086926457021462 n 0.3 tAlpha 0
+IsoLE 63 d 0. E 1.1574294679212112 n 0.3 tAlpha 0
+IsoLE 64 d 0. E 1.481891100202252 n 0.3 tAlpha 0
+IsoLE 65 d 0. E 0.915361131980636 n 0.3 tAlpha 0
+IsoLE 66 d 0. E 0.6177593773385607 n 0.3 tAlpha 0
+IsoLE 67 d 0. E 0.9411169690800347 n 0.3 tAlpha 0
+IsoLE 68 d 0. E 0.6100531286394125 n 0.3 tAlpha 0
+IsoLE 69 d 0. E 0.6484533851626981 n 0.3 tAlpha 0
+IsoLE 70 d 0. E 1.377268385566743 n 0.3 tAlpha 0
+IsoLE 71 d 0. E 1.0474097826793156 n 0.3 tAlpha 0
+IsoLE 72 d 0. E 1.149539306880054 n 0.3 tAlpha 0
+IsoLE 73 d 0. E 0.5103716369310822 n 0.3 tAlpha 0
+IsoLE 74 d 0. E 1.1299617556928196 n 0.3 tAlpha 0
+IsoLE 75 d 0. E 1.2970315249518372 n 0.3 tAlpha 0
+IsoLE 76 d 0. E 0.9212506752881372 n 0.3 tAlpha 0
+IsoLE 77 d 0. E 0.7652848958012158 n 0.3 tAlpha 0
+IsoLE 78 d 0. E 1.4023740561764202 n 0.3 tAlpha 0
+IsoLE 79 d 0. E 0.7509151961182176 n 0.3 tAlpha 0
+IsoLE 80 d 0. E 0.8740616344907325 n 0.3 tAlpha 0
+IsoLE 81 d 0. E 1.2878813225903873 n 0.3 tAlpha 0
+BoundaryCondition 1 loadTimeFunction 1 prescribedvalue 0
+BoundaryCondition 2 loadTimeFunction 1 prescribedvalue 1
+PiecewiseLinFunction 1 nPoints 2 t 2 0.0 1.0 f(t) 2 0.0 1.0

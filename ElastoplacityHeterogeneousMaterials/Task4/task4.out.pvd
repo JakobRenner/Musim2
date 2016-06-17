@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<VTKFile type="Collection" version="0.1">
+<Collection>
+<DataSet timestep="0" group="" part="" file="task4.out.m0.1.vtu"/>
+<DataSet timestep="0.1" group="" part="" file="task4.out.m0.2.vtu"/>
+<DataSet timestep="0.2" group="" part="" file="task4.out.m0.3.vtu"/>
+<DataSet timestep="0.3" group="" part="" file="task4.out.m0.4.vtu"/>
+<DataSet timestep="0.4" group="" part="" file="task4.out.m0.5.vtu"/>
+<DataSet timestep="0.5" group="" part="" file="task4.out.m0.6.vtu"/>
+<DataSet timestep="0.6" group="" part="" file="task4.out.m0.7.vtu"/>
+<DataSet timestep="0.7" group="" part="" file="task4.out.m0.8.vtu"/>
+<DataSet timestep="0.8" group="" part="" file="task4.out.m0.9.vtu"/>
+<DataSet timestep="0.9" group="" part="" file="task4.out.m0.10.vtu"/>
+</Collection>
+</VTKFile>
